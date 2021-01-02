@@ -2,7 +2,8 @@
 ## Here are some instructions on how to get started with React JS.
 If you're a React JS Starter, then here are some instructions to get started for **Windows**.
 
-React JS has been designed and maintained by Facebook Inc. It is a very good tool for web development. Here's an example of React JS syntax.
+React JS has been designed and maintained by Facebook Inc. It is a very good tool for web development. It can be used to build user interfaces effortlessly and you can easily debug its code. It helps you build dynamic web apps.
+Here's an example of React JS syntax.
 
 ```HTML
 <!DOCTYPE html>
@@ -46,3 +47,13 @@ create-react-app reactjs-starter
 ```
 
 Instead of putting `reactjs-starter`, you can put whatever name you want.
+After the app has been created, use the `cd` command and change the directory to your app's main directory. In this case, we'll do the following.
+
+```Terminal
+cd reactjs-starter
+```
+Then, type `npm start` to start the local development server.
+The CLI will open http://localhost:3000.
+
+You'll get the following page.
+![React Logo](https://drive.google.com/file/d/16tYtnEKd7NgpmDAZMH3dtLsTSfz5_9Uj/view?usp=sharing)
