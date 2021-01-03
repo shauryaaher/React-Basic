@@ -18,9 +18,9 @@ Here's an example of React JS syntax.
 
 ```
 
-```JavaScript
+```JSX
 import React from 'react';
-import ReactDOM from 'react-dom;
+import ReactDOM from 'react-dom';
 
 const element = <h1>Hello World!</h1>;
 
@@ -54,6 +54,51 @@ cd reactjs-starter
 ```
 Then, type `npm start` to start the local development server.
 The CLI will open http://localhost:3000.
+This has hot reloading enabled
 
-You'll get the following page.
-![React Logo](https://drive.google.com/file/d/16tYtnEKd7NgpmDAZMH3dtLsTSfz5_9Uj/view?usp=sharing)
+You'll then get a page with a React spinning logo and some text.
+
+Now, open a code editor or an IDE with the folder containing you app's code.
+
+Here's a list of the folders the you'll see.
+
+1. `node_modules`
+2. `public`
+3. `src`
+
+**Note:** If you check the `index.html` file, there won't be any script tags which connect you JSX files. That's because when the page has loaded, a script tag get's embedded with webpack. **Do not add any script files in the `index.html` file.**
+
+There might be some files outside these folders, **do not modify them**. Also, **Don't modify the node modules folder**. It contains certain packages which are necessary for your app to run.
+
+You'll need to **delete the following files**.
+
+In the `src` folder, delete -
+1. App.js
+2. logo.svg
+
+Then, rename `index.js` in the `src` folder to `index.jsx`.
+
+In your `index.html` file, add the following code in the `<body> and </body>` tags.
+
+```HTML
+<body>
+  <div> id="root"</div>
+</body>
+```
+
+Now clear all code in the `index.jsx` file and write the following code
+
+```JSX
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './App.css';
+
+const element = <h1>Hi there!</h1>;
+ReactDOM.render(
+  element,
+  document.getElementById('root')
+);
+
+```
+
+And that's it! You've now created your first React JS app.
