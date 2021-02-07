@@ -1,104 +1,70 @@
-# React JS starter project
-## Here are some instructions on how to get started with React JS.
-If you're a React JS Starter, then here are some instructions to get started for **Windows**.
+# Getting Started with Create React App
 
-React JS has been designed and maintained by Facebook Inc. It is a very good tool for web development. It can be used to build user interfaces effortlessly and you can easily debug its code. It helps you build dynamic web apps.
-Here's an example of React JS syntax.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-```HTML
-<!DOCTYPE html>
-<html>
-  <head>
-    <!--Metadata goes here-->
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
-</html>
+## Available Scripts
 
-```
+In the project directory, you can run:
 
-```JSX
-import React from 'react';
-import ReactDOM from 'react-dom';
+### `npm start`
 
-const element = <h1>Hello World!</h1>;
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-ReactDOM.render(
-  element,
-  document.getElementById('root')
-);
-```
-**_You will need to be familiar with HTML, CSS and JavaScript along with some command-line tools to use React JS._**
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-What you might have noticed is that HTML code was assigned to `const element` in JavaScript.
-This type of syntax is called **_JSX_** which stands for JavaScript XML. It replaces the `React.createElement` method in React JS. JSX is preferred over the `React.createElement` method as it protects your app from XSS and other type of attacks and is eaisier to use.
+### `npm test`
 
-We're gonna be using the `create-react-app` CLI to create and use React JS apps.
-To install this CLI with `npm`, type the following command in your terminal.
-```Terminal
-npm install -g create-react-app
-```
-After that's done, create a folder and name it with whatever project name you like. In this example, it's name will be 'ReactJS starter'.
-Then, open a terminal window in the same foler and type the following.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-```Terminal
-create-react-app reactjs-starter
-```
+### `npm run build`
 
-Instead of putting `reactjs-starter`, you can put whatever name you want.
-After the app has been created, use the `cd` command and change the directory to your app's main directory. In this case, we'll do the following.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-```Terminal
-cd reactjs-starter
-```
-Then, type `npm start` to start the local development server.
-The CLI will open http://localhost:3000.
-This has hot reloading enabled
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-You'll then get a page with a React spinning logo and some text.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Now, open a code editor or an IDE with the folder containing you app's code.
+### `npm run eject`
 
-Here's a list of the folders the you'll see.
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-1. `node_modules`
-2. `public`
-3. `src`
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-**Note:** If you check the `index.html` file, there won't be any script tags which connect you JSX files. That's because when the page has loaded, a script tag get's embedded with webpack. **Do not add any script files in the `index.html` file.**
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-There might be some files outside these folders, **do not modify them**. Also, **Don't modify the node modules folder**. It contains certain packages which are necessary for your app to run.
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-You'll need to **delete the following files**.
+## Learn More
 
-In the `src` folder, delete -
-1. App.js
-2. logo.svg
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Then, rename `index.js` in the `src` folder to `index.jsx`.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-In your `index.html` file, add the following code in the `<body> and </body>` tags.
+### Code Splitting
 
-```HTML
-<body>
-  <div> id="root"</div>
-</body>
-```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-Now clear all code in the `index.jsx` file and write the following code
+### Analyzing the Bundle Size
 
-```JSX
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './App.css';
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-const element = <h1>Hi there!</h1>;
-ReactDOM.render(
-  element,
-  document.getElementById('root')
-);
+### Making a Progressive Web App
 
-```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-And that's it! You've now created your first React JS app.
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
