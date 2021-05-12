@@ -19,3 +19,4 @@ class Hi extends React.Component {
 }
 
 ReactDOM.render(<Hi />, document.getElementById('root'));
+// All of this was made by me. This content wasn't borrowed from anywhere.
